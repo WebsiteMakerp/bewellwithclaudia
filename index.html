@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Be Well with Claudia</title>
+<style>
+  body, html {
+    margin: 0; 
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(to right, #4ca850 50%, #ffeaf0 50%);
+    color: #333333;
+    line-height: 1.6;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 120px;
+    background-color: #4ca850;
+    color: #e6f0e6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    user-select: none;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  }
+
+  nav {
+    margin-top: 140px;
+    background-color: transparent;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  nav a {
+    color: #4ca850;
+    font-weight: 700;
+    margin: 0 18px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #cc3956;
+  }
+
+  .content-wrapper {
+    max-width: 800px;
+    margin: 60px auto 80px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 30px 40px;
+  }
+
+  .top-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto 40px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(76, 168, 80, 0.3);
+  }
+
+  h2 {
+    color: #4ca850;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  p, ul {
+    font-size: 1.15rem;
+    color: #333333;
+    max-width: 650px;
+    margin: 0 auto 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4ca850;
+    font-weight: bold;
+  }
+
+  #email-info {
+    background-color: #ffeaf0;
+    color: #333333;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto 0;
+    box-shadow: 0 0 12px rgba(204, 57, 86, 0.3);
+  }
+
+  #email-info strong {
+    color: #4ca850;
+    user-select: text;
+  }
+
+  #instagram-section {
+    text-align: center;
+    margin: 50px auto 0;
+  }
+
+  #instagram-button {
+    background-color: #4ca850;
+    color: #ffeaf0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(76, 168, 80, 0.5);
+    user-select: none;
+  }
+
+  #instagram-button:hover {
+    background-color: #3f9440;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ffeaf0;
+    color: #888888;
+    font-size: 0.9rem;
+    user-select: none;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    margin-top: 60px;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      position: static;
+      width: 100%;
+      height: auto;
+      font-size: 3rem;
+      padding: 20px 20px;
+      justify-content: center;
+      text-align: center;
+      box-shadow: none;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header {
+      font-size: 2.4rem;
+      padding: 15px 15px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p, ul {
+      font-size: 1rem;
+    }
+
+    .content-wrapper {
+      padding: 20px 15px;
+      margin: 30px 10px 60px;
+    }
+
+    #email-info {
+      font-size: 1.1rem;
+      max-width: 90%;
+      margin: 30px auto 0;
+    }
+
+    #instagram-button {
+      width: 100%;
+      padding: 15px 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    Be Well with Claudia
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+  </nav>
+
+  <div class="content-wrapper">
+    <img src="claudia.jpg" alt="Claudia" class="top-image" />
+
+    <section id="about">
+      <h2>About Claudia</h2>
+      <p>
+        Claudia is a dedicated wellness coach with over 10 years of experience empowering people to live healthier, happier lives.
+        She believes true wellness is a balance of mind, body, and spirit — tailored uniquely to each individual.
+      </p>
+      <p>
+        Her approach combines evidence-based techniques with compassionate support to guide you through lifestyle changes,
+        stress management, nutrition, and mindfulness practices that stick.
+      </p>
+      <p>
+        Claudia’s mission is to help you unlock your full potential and create sustainable habits for long-lasting vitality and joy.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Personalized Wellness Coaching – tailored sessions designed to meet your unique health goals.</li>
+        <li>Nutrition & Lifestyle Guidance – practical advice on meal planning, exercise, and self-care.</li>
+        <li>Mindfulness & Meditation Training – learn techniques to reduce stress and increase mental clarity.</li>
+        <li>1-on-1 Support Sessions – ongoing motivation and accountability to keep you on track.</li>
+        <li>Workshops & Group Classes – engaging community events focused on holistic wellbeing.</li>
+      </ul>
+      <p>
+        Whether you’re looking to boost your energy, manage anxiety, or simply adopt healthier habits,
+        Claudia provides the tools and encouragement you need every step of the way.
+      </p>
+    </section>
+
+    <section id="email-info">
+      Email <strong>claudiamelolane@hotmail.co.uk</strong> if you want to book an appointment.<br />
+      Claudia is happy to answer your questions and help you start your wellness journey today!
+      Or text <strong>+44 7545589718<strong> on whatsapp
+    </section>
+
+    <section id="instagram-section">
+      <button id="instagram-button" onclick="window.open('https://www.instagram.com/be_well_with_claudia/', '_blank')">
+        Follow Claudia on Instagram
+      </button>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Be Well with Claudia. All rights reserved.
+  </footer>
+</body>
+</html>
+
